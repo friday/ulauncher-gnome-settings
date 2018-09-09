@@ -1,0 +1,163 @@
+{
+  "manifest_version": "1",
+  "api_version": "1",
+  "name": "Gnome Settings",
+  "description": "Quick access to Gnome Control Center panels",
+  "developer_name": "Albin Larsson",
+  "icon": "icon.svg",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "background",
+      "type": "keyword",
+      "name": "Background Sеttings",
+      "default_value": "Background Sеttings"
+    },
+    {
+      "id": "bluetooth",
+      "type": "keyword",
+      "name": "Bluetooth Settings",
+      "default_value": "Bluetooth Settings"
+    },
+    {
+      "id": "color",
+      "type": "keyword",
+      "name": "Color Settings",
+      "default_value": "Color Settings"
+    },
+    {
+      "id": "datetime",
+      "type": "keyword",
+      "name": "Date & Time Settings",
+      "default_value": "Date & Time Settings"
+    },
+    {
+      "id": "default-apps",
+      "type": "keyword",
+      "name": "Default Applications",
+      "default_value": "Default Applications"
+    },
+    {
+      "id": "display",
+      "type": "keyword",
+      "name": "Display Settings",
+      "default_value": "Display Settings"
+    },
+    {
+      "id": "info-overview",
+      "type": "keyword",
+      "name": "About Computer",
+      "default_value": "About Computer"
+    },
+    {
+      "id": "keyboard",
+      "type": "keyword",
+      "name": "Keyboard Settings",
+      "default_value": "Keyboard Settings"
+    },
+    {
+      "id": "mouse",
+      "type": "keyword",
+      "name": "Mouse Settings",
+      "default_value": "Mouse Settings"
+    },
+    {
+      "id": "network",
+      "type": "keyword",
+      "name": "Network Settings",
+      "default_value": "Network Settings"
+    },
+    {
+      "id": "notifications",
+      "type": "keyword",
+      "name": "Notification Settings",
+      "default_value": "Notification Settings"
+    },
+    {
+      "id": "online-accounts",
+      "type": "keyword",
+      "name": "Online Accounts",
+      "default_value": "Online Accounts"
+    },
+    {
+      "id": "power",
+      "type": "keyword",
+      "name": "Power & Battery Settings",
+      "default_value": "Power & Battery Settings"
+    },
+    {
+      "id": "printers",
+      "type": "keyword",
+      "name": "Printer Settings",
+      "default_value": "Printer Settings"
+    },
+    {
+      "id": "privacy",
+      "type": "keyword",
+      "name": "Privacy Settings",
+      "default_value": "Privacy Settings"
+    },
+    {
+      "id": "removable-media",
+      "type": "keyword",
+      "name": "Removable Media Settings",
+      "default_value": "Removable Media Settings"
+    },
+    {
+      "id": "region",
+      "type": "keyword",
+      "name": "Region & Language Settings",
+      "default_value": "Region & Language Settings"
+    },
+    {
+      "id": "search",
+      "type": "keyword",
+      "name": "Search Settings",
+      "default_value": "Search Settings"
+    },
+    {
+      "id": "screen",
+      "type": "keyword",
+      "name": "Screen Settings",
+      "default_value": "Screen Settings"
+    },
+    {
+      "id": "sharing",
+      "type": "keyword",
+      "name": "Sharing Settings",
+      "default_value": "Sharing Settings"
+    },
+    {
+      "id": "sound",
+      "type": "keyword",
+      "name": "Sound Settings",
+      "default_value": "Sound Settings"
+    },
+    {
+      "id": "universal-access",
+      "type": "keyword",
+      "name": "Universal Access Settings",
+      "default_value": "Universal Access Settings"
+    },
+    {
+      "id": "user-accounts",
+      "type": "keyword",
+      "name": "User Accounts",
+      "default_value": "User Accounts"
+    },
+    {
+      "id": "wacom",
+      "type": "keyword",
+      "name": "Wacom Tablet Settings",
+      "default_value": "Wacom Tablet Settings"
+    },
+    {
+      "id": "wifi",
+      "type": "keyword",
+      "name": "Wifi Settings",
+      "default_value": "Wifi Settings"
+    }
+  ]
+}

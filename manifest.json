@@ -1,13 +1,10 @@
 {
-  "manifest_version": "1",
+  "manifest_version": "2",
   "api_version": "1",
   "name": "Gnome Settings",
   "description": "Quick access to Gnome Control Center panels",
   "developer_name": "Albin Larsson",
   "icon": "icon.svg",
-  "options": {
-    "query_debounce": 0.1
-  },
   "preferences": [
     {
       "id": "background",
@@ -116,12 +113,6 @@
       "type": "keyword",
       "name": "Search Settings",
       "default_value": "Search Settings"
-    },
-    {
-      "id": "screen",
-      "type": "keyword",
-      "name": "Screen Settings",
-      "default_value": "Screen Settings"
     },
     {
       "id": "sharing",

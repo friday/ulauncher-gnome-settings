@@ -10,145 +10,169 @@
       "id": "background",
       "type": "keyword",
       "name": "Background Sеttings",
-      "default_value": "Background Sеttings"
+      "default_value": "Background Sеttings",
+      "description": "Change your background image to a wallpaper or photo"
     },
     {
       "id": "bluetooth",
       "type": "keyword",
       "name": "Bluetooth Settings",
-      "default_value": "Bluetooth Settings"
+      "default_value": "Bluetooth Settings",
+      "description": "Turn Bluetooth on and off and connect your devices"
     },
     {
       "id": "color",
       "type": "keyword",
       "name": "Color Settings",
-      "default_value": "Color Settings"
+      "default_value": "Color Settings",
+      "description": "Calibrate the colour of your devices, such as displays, cameras or printers"
     },
     {
       "id": "datetime",
       "type": "keyword",
-      "name": "Date & Time Settings",
-      "default_value": "Date & Time Settings"
+      "name": "Date & Time Settings",
+      "default_value": "Date & Time Settings",
+      "description": "Change the date and time, including time zone"
     },
     {
       "id": "default-apps",
       "type": "keyword",
       "name": "Default Applications",
-      "default_value": "Default Applications"
+      "default_value": "Default Applications",
+      "description": "Configure Default Applications"
     },
     {
       "id": "display",
       "type": "keyword",
       "name": "Display Settings",
-      "default_value": "Display Settings"
+      "default_value": "Display Settings",
+      "description": "Choose how to use connected monitors and projectors"
     },
     {
       "id": "info-overview",
       "type": "keyword",
-      "name": "About Computer",
-      "default_value": "About Computer"
+      "name": "About Computer",
+      "default_value": "About Computer",
+      "description": "View information about your system"
     },
     {
       "id": "keyboard",
       "type": "keyword",
       "name": "Keyboard Settings",
-      "default_value": "Keyboard Settings"
+      "default_value": "Keyboard Settings",
+      "description": "View and change keyboard shortcuts and set your typing preferences"
     },
     {
       "id": "mouse",
       "type": "keyword",
       "name": "Mouse Settings",
-      "default_value": "Mouse Settings"
+      "default_value": "Mouse Settings",
+      "description": "Change your mouse or touchpad sensitivity and select right or left-handed"
     },
     {
       "id": "network",
       "type": "keyword",
       "name": "Network Settings",
-      "default_value": "Network Settings"
+      "default_value": "Network Settings",
+      "description": "Control how you connect to the Internet"
     },
     {
       "id": "notifications",
       "type": "keyword",
       "name": "Notification Settings",
-      "default_value": "Notification Settings"
+      "default_value": "Notification Settings",
+      "description": "Control which notifications are displayed and what they show"
     },
     {
       "id": "online-accounts",
       "type": "keyword",
-      "name": "Online Accounts",
-      "default_value": "Online Accounts"
+      "name": "Online Accounts",
+      "default_value": "Online Accounts",
+      "description": "Connect to your online accounts and decide what to use them for"
     },
     {
       "id": "power",
       "type": "keyword",
       "name": "Power & Battery Settings",
-      "default_value": "Power & Battery Settings"
+      "default_value": "Power & Battery Settings",
+      "description": "View your battery status and change power saving settings"
     },
     {
       "id": "printers",
       "type": "keyword",
       "name": "Printer Settings",
-      "default_value": "Printer Settings"
+      "default_value": "Printer Settings",
+      "description": "Add printers, view printer jobs and decide how you want to print"
     },
     {
       "id": "privacy",
       "type": "keyword",
       "name": "Privacy Settings",
-      "default_value": "Privacy Settings"
+      "default_value": "Privacy Settings",
+      "description": "Protect your personal information and control what others might see"
     },
     {
       "id": "removable-media",
       "type": "keyword",
       "name": "Removable Media Settings",
-      "default_value": "Removable Media Settings"
+      "default_value": "Removable Media Settings",
+      "description": "Configure Removable Media settings"
     },
     {
       "id": "region",
       "type": "keyword",
       "name": "Region & Language Settings",
-      "default_value": "Region & Language Settings"
+      "default_value": "Region & Language Settings",
+      "description": "Select your display language, formats, keyboard layouts and input sources"
     },
     {
       "id": "search",
       "type": "keyword",
       "name": "Search Settings",
-      "default_value": "Search Settings"
+      "default_value": "Search Settings",
+      "description": "Control which applications show search results in the Activities Overview"
     },
     {
       "id": "sharing",
       "type": "keyword",
       "name": "Sharing Settings",
-      "default_value": "Sharing Settings"
+      "default_value": "Sharing Settings",
+      "description": "Control what you want to share with others"
     },
     {
       "id": "sound",
       "type": "keyword",
       "name": "Sound Settings",
-      "default_value": "Sound Settings"
+      "default_value": "Sound Settings",
+      "description": "Change sound levels, inputs, outputs, and alert sounds"
     },
     {
       "id": "universal-access",
       "type": "keyword",
-      "name": "Universal Access Settings",
-      "default_value": "Universal Access Settings"
+      "name": "Universal Access Settings",
+      "default_value": "Universal Access Settings",
+      "description": "Make it easier to see, hear, type, point and click"
     },
     {
       "id": "user-accounts",
       "type": "keyword",
       "name": "User Accounts",
-      "default_value": "User Accounts"
+      "default_value": "User Accounts",
+      "description": "Add or remove users and change your password"
     },
     {
       "id": "wacom",
       "type": "keyword",
       "name": "Wacom Tablet Settings",
-      "default_value": "Wacom Tablet Settings"
+      "default_value": "Wacom Tablet Settings",
+      "description": "Set button mappings and adjust stylus sensitivity for graphics tablets"
     },
     {
       "id": "wifi",
       "type": "keyword",
       "name": "Wifi Settings",
-      "default_value": "Wifi Settings"
+      "default_value": "Wifi Settings",
+      "description": "Control how you connect to Wi-Fi networks"
     }
   ]
 }

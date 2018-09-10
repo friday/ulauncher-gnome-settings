@@ -17,7 +17,7 @@ Ulauncher sorts keywords above apps, and only shows a limited amount of results.
 
 ### Create or modify desktop entries
 Ulauncher's app index is built from [desktop entries](https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html).
-gnome-control-center creates these, but specify that they shouldn't turn up in launchers and application menus. You can override this:
+gnome-control-center creates these, but specify that they shouldn't display in application menus and launchers. You can override this:
 
 ```sh
 # Ulauncher will look for .desktop-files in ~/.local/share/

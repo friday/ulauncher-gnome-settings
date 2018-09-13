@@ -2,6 +2,8 @@
 
 [Ulauncher](https://ulauncher.io) extension for accessing Gnome settings (Gnome Control Center panels) directly as if they were apps.
 
+![ulauncher-gnome-settings screenshot](screenshot.png)
+
 This extension is using experimental techniques to make Ulauncher keywords look and behave like apps. This comes with a couple of minor caveats but as of writing this, it works fine.
 
 ## How it works (primarily for extension developers)

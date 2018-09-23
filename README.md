@@ -42,5 +42,5 @@ You can change [Ulauncher's filter](https://github.com/Ulauncher/Ulauncher/blob/
 Note that local modifications will be removed when you upgrade ulauncher.
 
 ## Credits
-* noam09 for [the original extension](https://github.com/noam09/ulauncher-gnome-control-center) (this one started off as [an attempted PR](https://github.com/noam09/ulauncher-gnome-control-center/issues/2)).
+* noam09 for [the original extension](https://github.com/noam09/ulauncher-gnome-control-center) (this extension started off as [a suggestion](https://github.com/noam09/ulauncher-gnome-control-center/issues/2)).
 * The icon is from the [Numix project](https://github.com/numixproject).

@@ -2,7 +2,7 @@
   "manifest_version": "2",
   "api_version": "1",
   "name": "Gnome Settings",
-  "description": "Quick access to Gnome Control Center panels",
+  "description": "Launch Gnome Settings panels directly",
   "developer_name": "Albin Larsson",
   "icon": "icon.svg",
   "preferences": [

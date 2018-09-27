@@ -25,7 +25,7 @@ gnome-control-center creates these, but specify that they shouldn't display in a
 
 ```sh
 # Ulauncher will look for .desktop-files in ~/.local/share/
-UAPP_DIR=~/.local/share/ulauncher-apps
+UAPP_DIR=~/.local/share/applications
 # Assure user home dir for desktop entries
 mkdir -p $UAPP_DIR
 # Copy disabled gnome-control-center desktop entries to user home dir
@@ -34,7 +34,7 @@ cp -f /usr/share/applications/gnome-*-panel.desktop $UAPP_DIR
 sed -i '/NoDisplay=true/s/^/#/' $UAPP_DIR/gnome-*-panel.desktop
 ```
 
-Note that your new desktop entries could be read by other applications.
+Note that this will likely cause duplicate entries to appear for other launcher apps which makes exceptions for these, such as Gnome's "Show All Applications" (Super+A).
 
 ### Modify Ulauncher (not recommended)
 You can change [Ulauncher's filter](https://github.com/Ulauncher/Ulauncher/blob/3c39799b119abf485fba07f8c80b4f79526e5fca/ulauncher/util/desktop/reader.py#L40) to override `app.get_nodisplay()` if `app.get_executable() == 'gnome-control-center'`.

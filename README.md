@@ -10,14 +10,15 @@ This extension is using experimental techniques to make Ulauncher keywords look 
 
 ## How it works (primarily for extension developers)
 
-Ulauncher's extension API is intended for adding keywords with arguments, like "`decode` \&amp;" or "`npm` lodash". Extensions registers these keywords in their manifests. Keywords have the properties `name` and `default_value`. The `name` is searchable. For example, the extension "Process Killer" (if you have it) will show up in the result list if you type "proc.." or "ki..". If you press enter or alt + number it will convert your input to "kill ". "kill" is the `default_value` and the space character after is needed to triggers the extension.
+Ulauncher extensions can add multiple keywords, but not apps.
 
-Since this behavior is not needed or wanted for apps, this extension uses a `default_value` that looks like the `name` but with an untypable blank character instead of space.
+Keywords and apps have different workflows. Both have searchable names (like "Google Translate"), but triggering it will have different behavior. Triggering an app name will launch the app. Triggering the keyword name will replace your input with the keyword followed by a space, waiting for you to type an argument.
 
-1. Converting your search input to `default_value` + space can't be disabled, but converting it to the same name as displayed in the search result list at least makes some sense and looks a lot less hacky. This requires the `default_value` to be the same as the `name`, but since space is used to separate the keyword and argument(s), using the actual space character in keywords doesn't work.
-2. Launching an application by typing the `default_value` followed by a space is not how applications behave in Ulauncher, and is unwanted and unintuitive (for applications). Making the keywords untypable prevents this.
+In addition to this, keywords can be typed directly. This skips the fuzzy search step.
 
-As a result, the keyword's name (usually the settings panel name followed by " Settings") will show (followed by a space character) briefly before closing Ulauncher and opening the panel. This doesn't look too strange, so you may not even think about it (see the gif).
+To avoid the additional step and "launch" instead, this extension uses default keywords that look like names. That way if you select "Display Settings" it will replace your input with "Display Settings " (not something else like "disp "). This will show briefly before the KeywordQueryEvent-handler closes Ulauncher and starts the settings app. It looks a lot less hacky this way, and you may not even think about it (see the gif).
+
+Instead of spaces it's using an untypable blank character with the same width. Keywords can't contain spaces, since space is the separator between the keyword and the arguments. As a bonus, sinnce it can't be typed with a keyboard it can only launch via search (like apps).
 
 Additionally, a similar "hack" is used to control the order of the search results. The "e" in "Settings" is actually a Ukrainian "Ye" letter. It looks identical with my font (compare "e" vs "е"). This was needed because Ulauncher normally shows keywords above apps, and only shows a limited amount of results. This extension adds 20 keywords containing the word "Settings". This would make it impossible to find the ordinary "Settings" application or anything else by typing in "settings". Ulauncher's search is rather forgiving so the slight mismatch won't have a big impact on the results, but will affect the sort order. The highligting doesn't seem to distinguish between "e" or "е" so that works too.
 

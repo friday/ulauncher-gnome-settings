@@ -18,7 +18,7 @@ In addition to this, keywords can be typed directly. This skips the fuzzy search
 
 To avoid the additional step and "launch" instead, this extension uses default keywords that look like names. That way if you select "Display Settings" it will replace your input with "Display Settings " (not something else like "disp "). This will show briefly before the KeywordQueryEvent-handler closes Ulauncher and starts the settings app. It looks a lot less hacky this way, and you may not even think about it (see the gif).
 
-Instead of spaces it's using an untypable blank character with the same width. Keywords can't contain spaces, since space is the separator between the keyword and the arguments. As a bonus, sinnce it can't be typed with a keyboard it can only launch via search (like apps).
+Instead of spaces it's using an untypable blank character with the same width. Keywords can't contain spaces, since space is the separator between the keyword and the arguments. As a bonus, since it can't be typed with a keyboard it can only launch via search (like apps).
 
 Additionally, a similar workaround is used to avoid a problem with the order of the search results. This extension adds 20 keywords containing the word "Settings". This is more than the maximum search results Ulauncher shows. If you type just "settings" you wouldn't find the ordinary "Settings" application or "Print Settings" or "QT5 Settings". To avoid this, the "e" in "Settings" is actually a Ukrainian "Ye" letter. It looks identical with my font (compare "e" vs "е"). Ulauncher's search is rather forgiving so the slight mismatch won't have a big impact on the results, but will affect the sort order. The highlighting doesn't seem to distinguish between "e" or "е" so that works too.
 

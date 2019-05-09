@@ -16,8 +16,13 @@ class GnomeSettings(Extension):
 
 class KeywordQueryEventListener(EventListener):
   def on_event(self, event, extension):
-    subprocess.Popen(['gnome-control-center', event.get_keyword_id()])
-    return HideWindowAction()
+    keyword = event.get_keyword()
+
+    # Find the keyword id using the keyword (since the keyword can be changed by users)
+    for setting, kw in extension.preferences.items():
+      if kw == keyword:
+        subprocess.Popen(['gnome-control-center', setting])
+        return HideWindowAction()
 
 if not distutils.spawn.find_executable('gnome-control-center'):
   logger.error('gnome-control-center not found')

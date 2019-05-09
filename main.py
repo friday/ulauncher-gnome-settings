@@ -19,7 +19,7 @@ class KeywordQueryEventListener(EventListener):
     keyword = event.get_keyword()
 
     # Find the keyword id using the keyword (since the keyword can be changed by users)
-    for setting, kw in extension.preferences.iteritems():
+    for setting, kw in extension.preferences.items():
       if kw == keyword:
         subprocess.Popen(['gnome-control-center', setting])
         return HideWindowAction()

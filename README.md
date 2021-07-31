@@ -26,6 +26,9 @@ Users can override keywords in Ulauncher's preferences (hence the "default" in `
 
 ## Alternatives
 
+### Ulauncher-Revived
+[Ulauncher-Revived](https://github.com/friday/Ulauncher-Revived) is my fork of Ulauncher that supports behavior natively. See [issue](https://github.com/friday/Ulauncher-Revived/issues/20)
+
 ### ulauncher-gnome-control-center
 [ulauncher-gnome-control-center](https://github.com/noam09/ulauncher-gnome-control-center) is very well written extension with internal logic for caching and sorting settings based on your use. It uses a "normal" ulauncher keyword however, so it has the extra step this extension was designed to avoid.
 
@@ -45,11 +48,6 @@ sed -i '/NoDisplay=true/s/^/#/' $UAPP_DIR/gnome-*-panel.desktop
 ```
 
 Note that this will likely cause duplicate entries to appear for other launcher apps which makes exceptions for these, such as Gnome's "Show All Applications" (Super+A).
-
-### Modify Ulauncher (not recommended)
-You can change [Ulauncher's filter](https://github.com/Ulauncher/Ulauncher/blob/3c39799b119abf485fba07f8c80b4f79526e5fca/ulauncher/util/desktop/reader.py#L40) to override `app.get_nodisplay()` if `app.get_executable() == 'gnome-control-center'`.
-
-Note that local modifications will be removed when you upgrade ulauncher.
 
 ## Credits
 * noam09 for [the original extension](https://github.com/noam09/ulauncher-gnome-control-center) (this extension started off as [a suggestion](https://github.com/noam09/ulauncher-gnome-control-center/issues/2)).

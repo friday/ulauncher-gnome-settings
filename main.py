@@ -1,6 +1,6 @@
 import logging
 import subprocess
-import distutils.spawn
+import shutil
 from ulauncher.api.client.Extension import Extension
 from ulauncher.api.client.EventListener import EventListener
 from ulauncher.api.shared.event import KeywordQueryEvent
@@ -24,7 +24,7 @@ class KeywordQueryEventListener(EventListener):
         subprocess.Popen(['gnome-control-center', setting])
         return HideWindowAction()
 
-if not distutils.spawn.find_executable('gnome-control-center'):
+if not shutil.which('gnome-control-center'):
   logger.error('gnome-control-center not found')
 elif __name__ == '__main__':
   GnomeSettings().run()

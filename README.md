@@ -26,8 +26,8 @@ Users can override keywords in Ulauncher's preferences (hence the "default" in `
 
 ## Alternatives
 
-### Ulauncher-Revived
-[Ulauncher-Revived](https://github.com/friday/Ulauncher-Revived) is my fork of Ulauncher that supports behavior natively. See [issue](https://github.com/friday/Ulauncher-Revived/issues/20)
+### Ulauncher v6
+Ulauncher v6 (not released as of writing this) makes an [exception](https://github.com/Ulauncher/Ulauncher/commit/3601dfd4a455b0a0b55566a687d151a9d2f05b1d) for `gnome-control-center` so these are included as apps despite the Desktop specifying otherwise.
 
 ### ulauncher-gnome-control-center
 [ulauncher-gnome-control-center](https://github.com/noam09/ulauncher-gnome-control-center) is very well written extension with internal logic for caching and sorting settings based on your use. It uses a "normal" ulauncher keyword however, so it has the extra step this extension was designed to avoid.
